@@ -1,0 +1,43 @@
+@mixin heading-shadow($colour:lightness-shift($colour-primary), $offset: $heading-shadow-size){
+    text-shadow: $offset $offset $colour;
+}
+
+@mixin border($colour:$colour-primary) {
+    border: .1rem solid $colour;
+}
+
+@mixin img-ratio {
+    width: 100%;
+        display: block;
+        overflow: hidden;
+        padding-top: 56.25%;
+        position: relative;
+        & img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            transform: translate(-50%, -50%);
+        }
+}
+
+@mixin btn {
+    cursor: pointer;
+    background-image: linear-gradient(160deg, $colour-secondary, $colour-primary);
+    border-radius: 50px;
+    font-size: .8rem;
+    padding: 10px 18px 10px 18px;
+    font-weight: 200;
+    border: none;
+    margin: 10px;
+    color: $colour-white;
+    box-shadow: 1px 3px 4px #00000040;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    &:hover{
+        background: $colour-primary;
+        color: $colour-accent;
+    }
+}

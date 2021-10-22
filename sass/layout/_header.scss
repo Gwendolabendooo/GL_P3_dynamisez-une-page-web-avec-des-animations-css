@@ -1,0 +1,23 @@
+header {
+    background: lightness-shift($colour-white);
+    text-align: center;
+    & .pos{
+        padding: 10px;
+        font-size: 16px;
+        background-color: #0000000c;
+        & i{
+
+        }
+    }
+    & section{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        & p{
+            font-size: 1rem;
+            color: lightness-shift($colour-black);
+        }
+        & button{
+            @include btn
+        }
+    }
+}

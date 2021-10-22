@@ -1,0 +1,38 @@
+.fonctionnement{
+    position: relative;
+    width: 70%;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    padding: 10px 30px 10px 30px;
+    -o-border-radius: 50px;
+    font-size: 1.2rem;
+    background-color: lightness-shift($colour-white);
+    & div{
+        position: absolute;
+        left: 0;
+        top: 50%;
+        border-radius: 50%;
+        background-color: $colour-primary;
+        padding: 5px;
+        color: white;
+        width: 20px;
+        text-align: center;
+        font-size: 15px;
+        transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
+        -moz-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        -o-transform: translate(-50%,-50%);
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+}
+}
