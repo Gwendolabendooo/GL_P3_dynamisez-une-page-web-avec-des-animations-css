@@ -6,23 +6,25 @@
     justify-content: space-around;
     align-items: center;
     display: flex;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    padding: 10px 30px 10px 30px;
-    -o-border-radius: 50px;
-    font-size: 1.2rem;
+    box-shadow: 2px 4px 7px #55555536;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 26px;
+    font-size: 1rem;
     background-color: lightness-shift($colour-white);
-    & div{
+        & div{
         position: absolute;
         left: 0;
         top: 50%;
         border-radius: 50%;
         background-color: $colour-primary;
         padding: 5px;
-        color: white;
-        width: 20px;
+        color: $colour-white;
+        width: 25px;
         text-align: center;
         font-size: 15px;
         transform: translate(-50%,-50%);
@@ -34,5 +36,64 @@
         -moz-border-radius: 50%;
         -ms-border-radius: 50%;
         -o-border-radius: 50%;
+    }
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
 }
+.fonctionnement:hover{
+    background-color: rgba(115, 9, 120, 0.2);
+}
+#restaurents{
+    background-color: lightness-shift($colour-white);
+    .restaurent{
+        font-size: 18px;
+        width: 90%;
+        position: relative;
+        box-shadow: 2px 4px 7px #55555536;
+        overflow: hidden;
+        margin: auto;
+        margin-bottom: 20px;
+        & .new{
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            padding: 5px 10px;
+            color: #0c7b2e;
+            font-weight: bold;
+            background-color: #14ce92;
+        }
+        & img{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        & div{
+            margin: 10px;
+            position: relative;
+            & i{
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                transition: all .8s;
+                -webkit-transition: all .8s;
+                -moz-transition: all .8s;
+                -ms-transition: all .8s;
+                -o-transition: all .8s;
+}
+            & i:hover{
+                background: -webkit-linear-gradient(#FF79DA, #9356DC);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+        border-radius: 10px;
+        background-color: $colour-white;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
 }
