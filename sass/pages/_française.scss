@@ -1,19 +1,24 @@
 .img_menu{
     width: 100%;
 }
+.fa-arrow-left{
+    position: absolute;
+    left: 20px;
+    top: 10px;
+}
 .menu{
     background-color: #f2f2f2;
     border-radius: 30px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     margin-top: -60px;
     & button{
         @include btn
     }
     position: relative;
-    align-items: center;
-    justify-content: space-evenly;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
@@ -33,9 +38,15 @@
         -o-transition: all .4s;
 }
     & h2{
-        text-transform: capitalize;
         padding: 10px;
+        font-size: 22px;
+        font-family: Shrikhand;
         font-weight: bold;
+        margin-left: 10px;
+    }
+    & .fa-heart{
+        margin-right: 30px;
+        font-size: 20px;
     }
     & article:hover .fa-check-circle{
         margin: 0;

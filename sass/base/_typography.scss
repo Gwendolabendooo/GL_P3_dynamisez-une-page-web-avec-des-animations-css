@@ -6,10 +6,17 @@ body {
     line-height: 1.7;
 }
 
+svg > path{
+    fill: white;
+}
+
 footer{
     background-color: #292929;
     color: white;
     padding: 30px;
+    & svg > path{
+        fill: white;
+    }
     font-size: 18px;
     & div{
         display: flex;

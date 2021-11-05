@@ -7,6 +7,7 @@
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 h2 {
@@ -27,11 +28,19 @@ body {
   line-height: 1.7;
 }
 
+svg > path {
+  fill: white;
+}
+
 footer {
   background-color: #292929;
   color: white;
   padding: 30px;
   font-size: 18px;
+}
+
+footer svg > path {
+  fill: white;
 }
 
 footer div {
@@ -311,10 +320,15 @@ footer svg > path {
   position: absolute;
   right: 5px;
   top: 5px;
+  border-radius: 3px;
   padding: 5px 10px;
-  color: #0c7b2e;
+  color: #139e3d;
   font-weight: bold;
-  background-color: #14ce92;
+  background-color: #99E2D0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
 }
 
 #restaurents .restaurent img {
@@ -333,6 +347,7 @@ footer svg > path {
   position: absolute;
   right: 10px;
   top: 10px;
+  font-weight: 1;
   transition: all .8s;
   -webkit-transition: all .8s;
   -moz-transition: all .8s;
@@ -343,6 +358,7 @@ footer svg > path {
 #restaurents .restaurent div i:hover {
   background: -webkit-linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
+  font-weight: 600;
   -webkit-text-fill-color: transparent;
 }
 
@@ -356,7 +372,7 @@ footer svg > path {
   -ms-grid-rows: (auto)[3];
       grid-template-rows: repeat(3, auto);
   grid-gap: 1.5rem;
-      grid-template-areas: "image synopsis" "tags synopsis" "btn btn";
+      grid-template-areas: "image synopsis" "tags synopsis" "btn btn";
 }
 
 .project__image {
@@ -443,6 +459,12 @@ footer svg > path {
   width: 100%;
 }
 
+.fa-arrow-left {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+}
+
 .menu {
   background-color: #f2f2f2;
   border-radius: 30px;
@@ -455,14 +477,14 @@ footer svg > path {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: -60px;
-  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  margin-top: -60px;
+  position: relative;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
@@ -510,9 +532,16 @@ footer svg > path {
 }
 
 .menu h2 {
-  text-transform: capitalize;
   padding: 10px;
+  font-size: 22px;
+  font-family: Shrikhand;
   font-weight: bold;
+  margin-left: 10px;
+}
+
+.menu .fa-heart {
+  margin-right: 30px;
+  font-size: 20px;
 }
 
 .menu article:hover .fa-check-circle {
