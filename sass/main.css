@@ -235,6 +235,112 @@ footer svg > path {
   opacity: 1;
 }
 
+circle {
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: rotate linear infinite;
+  -webkit-animation: rotate linear infinite;
+}
+
+circle:nth-child(1) {
+  -webkit-animation-duration: 1.6s;
+          animation-duration: 1.6s;
+}
+
+circle:nth-child(2) {
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+}
+
+circle:nth-child(3) {
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes loader {
+  0% {
+    display: block;
+    width: 100%;
+  }
+  33% {
+    background-color: #9356DC;
+  }
+  66% {
+    background-color: #FF79DA;
+  }
+  99% {
+    width: 100%;
+  }
+  100% {
+    background-color: #99E2D0;
+    width: 0;
+  }
+}
+
+@keyframes loader {
+  0% {
+    display: block;
+    width: 100%;
+  }
+  33% {
+    background-color: #9356DC;
+  }
+  66% {
+    background-color: #FF79DA;
+  }
+  99% {
+    width: 100%;
+  }
+  100% {
+    background-color: #99E2D0;
+    width: 0;
+  }
+}
+
+.ctn-loader > svg {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.ctn-loader {
+  overflow: hidden;
+  position: fixed;
+  width: 0%;
+  z-index: 100;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: white;
+  animation: loader;
+  -webkit-animation: loader;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
 .fonctionnement {
   position: relative;
   width: 70%;
@@ -464,6 +570,34 @@ footer svg > path {
   width: 100%;
 }
 
+@-webkit-keyframes plats {
+  0% {
+    opacity: 0;
+    margin-bottom: -30px;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+    margin-bottom: 10px;
+  }
+}
+
+@keyframes plats {
+  0% {
+    opacity: 0;
+    margin-bottom: -30px;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+    margin-bottom: 10px;
+  }
+}
+
 .fa-arrow-left {
   position: absolute;
   left: 20px;
@@ -482,18 +616,42 @@ footer svg > path {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-top: -60px;
   position: relative;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
+}
+
+.menu div > article:nth-child(2) {
+  animation: plats;
+  -webkit-animation: plats;
+  -webkit-animation-duration: .8s;
+          animation-duration: .8s;
+}
+
+.menu div > article:nth-child(3) {
+  animation: plats;
+  -webkit-animation: plats;
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+  -webkit-animation-duration: .8s;
+          animation-duration: .8s;
+}
+
+.menu div > article:nth-child(4) {
+  animation: plats;
+  -webkit-animation: plats;
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+  -webkit-animation-duration: .8s;
+          animation-duration: .8s;
 }
 
 .menu button {
@@ -512,6 +670,7 @@ footer svg > path {
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
+  margin: 40px;
 }
 
 .menu button:hover {
@@ -519,10 +678,11 @@ footer svg > path {
   color: #99E2D0;
 }
 
-.menu .fa-check-circle {
+.menu .ctn-check {
+  width: auto;
   background-color: #99E2D0;
   color: white;
-  margin-right: -75px;
+  margin-right: -72px;
   padding: 24px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -567,8 +727,19 @@ footer svg > path {
   background-size: 100% 100%;
 }
 
+.menu article:hover .ctn-check {
+  margin-right: 0px;
+}
+
+.menu .fa-check-circle {
+  transition: all .6s;
+  -webkit-transition: all .6s;
+  -moz-transition: all .6s;
+  -ms-transition: all .6s;
+  -o-transition: all .6s;
+}
+
 .menu article:hover .fa-check-circle {
-  margin: 0;
   transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
   -moz-transform: rotate(360deg);
