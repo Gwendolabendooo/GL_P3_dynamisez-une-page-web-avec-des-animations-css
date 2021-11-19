@@ -174,3 +174,21 @@ circle {
         -o-border-radius: 10px;
     }
 }
+
+@media screen and (min-width: 640px) {
+    .fonctionnement{
+        width: 40%;
+    }
+    #restaurents{
+        text-align: center;
+        h2{
+            text-align: left;
+        }
+        .restaurent{
+            width: 45%!important;
+            margin: 10px!important;
+            display: inline-block;
+            text-align: left;
+        }
+    }
+  }

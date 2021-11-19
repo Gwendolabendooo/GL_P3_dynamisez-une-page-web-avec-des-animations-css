@@ -473,6 +473,24 @@ circle:nth-child(3) {
   -webkit-text-fill-color: transparent;
 }
 
+@media screen and (min-width: 640px) {
+  .fonctionnement {
+    width: 40%;
+  }
+  #restaurents {
+    text-align: center;
+  }
+  #restaurents h2 {
+    text-align: left;
+  }
+  #restaurents .restaurent {
+    width: 45% !important;
+    margin: 10px !important;
+    display: inline-block;
+    text-align: left;
+  }
+}
+
 .project {
   width: 100%;
   margin-bottom: 1.8rem;
@@ -483,7 +501,7 @@ circle:nth-child(3) {
   -ms-grid-rows: (auto)[3];
       grid-template-rows: repeat(3, auto);
   grid-gap: 1.5rem;
-      grid-template-areas: "image synopsis" "tags synopsis" "btn btn";
+      grid-template-areas: "image synopsis" "tags synopsis" "btn btn";
 }
 
 .project__image {
@@ -810,5 +828,23 @@ circle:nth-child(3) {
   max-width: 90%;
   width: 90%;
   margin: auto;
+}
+
+@media screen and (min-width: 1000px) {
+  .menu {
+    margin-top: -600px;
+  }
+  .menu button {
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+  .menu > div {
+    width: 60% !important;
+  }
+  .menu > h2 {
+    width: 50%;
+    padding: 35px;
+    font-size: 28px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
