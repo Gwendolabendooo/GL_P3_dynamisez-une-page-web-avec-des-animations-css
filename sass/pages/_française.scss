@@ -4,14 +4,13 @@
 @keyframes plats {
     0%{
         opacity: 0;
-        margin-bottom: -30px;
+        margin-top: 60px;
     }
     50%{
         opacity: 0.3;
     }
     100%{
         opacity: 1;
-        margin-bottom: 10px;
     }
 }
 .fa-arrow-left{
@@ -31,20 +30,20 @@
     div > article:nth-child(2){
         animation: plats;
         -webkit-animation: plats;
-        animation-duration: .8s;
+        animation-duration: 1s;
+        animation-delay: .6s;
     }
     div > article:nth-child(3){
         animation: plats;
         -webkit-animation: plats;
-        animation-delay: .2s;
-        animation-duration: .8s;
+        animation-duration: 1s;
+        animation-delay: 1.2s;
     }
     div > article:nth-child(4){
         animation: plats;
         -webkit-animation: plats;
-        animation-delay: .2s;
-        animation-duration: .8s;
-        
+        animation-duration: 1s;
+        animation-delay: 1.8s;
     }
     & button{
         @include btn;
@@ -128,7 +127,7 @@
         -moz-border-radius: 10px;
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
-        & .desc-plat{
+        & .desc-plat, h4{
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
@@ -137,8 +136,6 @@
             position: relative;
             padding: 10px;
             overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
             padding-right: 50px;
         }
         & .prix{

@@ -483,7 +483,7 @@ circle:nth-child(3) {
   -ms-grid-rows: (auto)[3];
       grid-template-rows: repeat(3, auto);
   grid-gap: 1.5rem;
-      grid-template-areas: "image synopsis" "tags synopsis" "btn btn";
+      grid-template-areas: "image synopsis" "tags synopsis" "btn btn";
 }
 
 .project__image {
@@ -573,28 +573,26 @@ circle:nth-child(3) {
 @-webkit-keyframes plats {
   0% {
     opacity: 0;
-    margin-bottom: -30px;
+    margin-top: 60px;
   }
   50% {
     opacity: 0.3;
   }
   100% {
     opacity: 1;
-    margin-bottom: 10px;
   }
 }
 
 @keyframes plats {
   0% {
     opacity: 0;
-    margin-bottom: -30px;
+    margin-top: 60px;
   }
   50% {
     opacity: 0.3;
   }
   100% {
     opacity: 1;
-    margin-bottom: 10px;
   }
 }
 
@@ -632,26 +630,28 @@ circle:nth-child(3) {
 .menu div > article:nth-child(2) {
   animation: plats;
   -webkit-animation: plats;
-  -webkit-animation-duration: .8s;
-          animation-duration: .8s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s;
 }
 
 .menu div > article:nth-child(3) {
   animation: plats;
   -webkit-animation: plats;
-  -webkit-animation-delay: .2s;
-          animation-delay: .2s;
-  -webkit-animation-duration: .8s;
-          animation-duration: .8s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
 }
 
 .menu div > article:nth-child(4) {
   animation: plats;
   -webkit-animation: plats;
-  -webkit-animation-delay: .2s;
-          animation-delay: .2s;
-  -webkit-animation-duration: .8s;
-          animation-duration: .8s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
 }
 
 .menu button {
@@ -768,7 +768,7 @@ circle:nth-child(3) {
   -o-border-radius: 10px;
 }
 
-.menu article .desc-plat {
+.menu article .desc-plat, .menu article h4 {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -778,8 +778,6 @@ circle:nth-child(3) {
   position: relative;
   padding: 10px;
   overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
   padding-right: 50px;
 }
 
