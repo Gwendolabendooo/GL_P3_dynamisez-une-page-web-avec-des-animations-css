@@ -614,7 +614,7 @@ circle:nth-child(3) {
 
 @-webkit-keyframes plats {
   0% {
-    opacity: O;
+    opacity: 0;
     margin-top: 60px;
   }
   50% {
