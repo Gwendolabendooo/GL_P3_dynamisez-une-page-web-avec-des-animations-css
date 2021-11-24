@@ -28,15 +28,17 @@ footer{
     }
 }
 
+@media screen and (min-width: 1000px) {
+    footer{
+        padding-left: 100px;
+    }
+}
+
 h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     text-align: center;
     font-size: 1.6rem;
-}
-
-h3{
-
 }
 
 textarea {

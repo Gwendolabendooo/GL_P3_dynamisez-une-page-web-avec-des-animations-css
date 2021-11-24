@@ -63,6 +63,13 @@ circle {
       -webkit-animation: loader;
       animation-duration: 3s;
 }
+.ctn-fonctionnement{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
 .fonctionnement{
     position: relative;
     width: 70%;
