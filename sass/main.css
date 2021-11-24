@@ -501,7 +501,7 @@ circle:nth-child(3) {
   -ms-grid-rows: (auto)[3];
       grid-template-rows: repeat(3, auto);
   grid-gap: 1.5rem;
-      grid-template-areas: "image synopsis" "tags synopsis" "btn btn";
+      grid-template-areas: "image synopsis" "tags synopsis" "btn btn";
 }
 
 .project__image {
@@ -835,8 +835,8 @@ circle:nth-child(3) {
     margin-top: -600px;
   }
   .menu button {
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 400px;
+    margin-right: 400px;
   }
   .menu > div {
     width: 60% !important;
