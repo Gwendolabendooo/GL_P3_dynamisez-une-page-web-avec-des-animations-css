@@ -932,7 +932,7 @@ circle:nth-child(3) {
 
 @media screen and (min-width: 600px) {
   .menu {
-    margin-top: -600px;
+    margin-top: -400px;
   }
 }
 
