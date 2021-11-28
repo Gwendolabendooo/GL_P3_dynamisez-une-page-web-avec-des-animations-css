@@ -938,7 +938,7 @@ circle:nth-child(3) {
 
 @media screen and (min-width: 1000px) {
   .menu {
-    margin-top: -900px;
+    margin-top: -600px;
   }
   .menu button {
     margin-left: 400px;
