@@ -506,7 +506,7 @@ circle:nth-child(3) {
 
 @media screen and (min-width: 640px) {
   .fonctionnement {
-    width: 40%;
+    width: 35%;
   }
   #restaurents {
     text-align: center;
